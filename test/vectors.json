@@ -1,0 +1,95 @@
+{
+  "source": "paragonie/ciphersweet v4.11.0, FIPSCrypto, StringProvider, PHP 8.3",
+  "rootKey": "4e1c44f87b4cdf21808762970b356891db180a9dd9850e7baf2a79ff3ab8a2fc",
+  "table": "contacts",
+  "column": "secret",
+  "indexes": [
+    {
+      "name": "email_idx",
+      "transforms": [
+        "lowercase"
+      ],
+      "bits": 32,
+      "fast": true
+    },
+    {
+      "name": "full_idx",
+      "transforms": [],
+      "bits": 256,
+      "fast": false
+    },
+    {
+      "name": "last4_idx",
+      "transforms": [
+        "lastFourDigits"
+      ],
+      "bits": 16,
+      "fast": true
+    }
+  ],
+  "cases": [
+    {
+      "value": "Alice@Example.com",
+      "ciphertext": "fips:THADkZqS_xWcDyTr9wsPo2eLUJUPeIsEs08ItjVp7I1PKAfKl7gJeVr29jMeZ9Pf_beKtd6lk4e7i5IYP0C2PSwtCVPSVoctNVq0HtmRJa0mYv1JRYxVoFe_ingDR0dS5PQXCLPhUi-HYMAozZpT1s4=",
+      "blindIndexes": {
+        "email_idx": "3fbe46d9",
+        "full_idx": "76882ff361b67c2f6af5b2743fbb42708c9a1fe567bfa4891ccecdf2923dbeef",
+        "last4_idx": "d21b"
+      }
+    },
+    {
+      "value": "café",
+      "ciphertext": "fips:3ZcEZ1IGG2d_n2V7Vp-ieCWtayEZo7O5ctPLfVVzp1z_Nwob49SVo2bDL2bT1dnXV0whVR7sVT7txiMHUoLUVUcoz28P5saLY5on7Kv6WR6l5aaStTum51NMKMPggIDGb_5_Jv8=",
+      "blindIndexes": {
+        "email_idx": "cb0c4b18",
+        "full_idx": "81b81478754cfb5c50425cabe1386c38a980db73dd1b481cc526d4f3843e84d2",
+        "last4_idx": "d21b"
+      }
+    },
+    {
+      "value": "日本語テキスト",
+      "ciphertext": "fips:IUXaxZNn50KVot0NaBPAixkUZjaTh5rJNxWd2Xi8GbWHRDWxlvQKE6UdO6ciHtpCvNuLkyW1y8LPLDyXZFd7vvqyzxYb6RyuhhRCpyA7hbRH0yL-8Yl9ogCDAjIz77cB9femjUt3LliEphVKXF7xXRmJSlt_",
+      "blindIndexes": {
+        "email_idx": "5e476851",
+        "full_idx": "abdf4bf454fd52088ade011ad7f1967d9bbd128c23883cb0d6740e1467311818",
+        "last4_idx": "d21b"
+      }
+    },
+    {
+      "value": "Zoë 🙂",
+      "ciphertext": "fips:i-Z5FKNmDbAFjNNirWltdheLEoc7GJg7DG6jvgKZyq2x8D1JB53kTvIcxCB_z1asw7cA2UAoS9hQtZTg-_H118dj9wvzMkZFoStsfWANrbWs7yki_d6dZEWUbwa-K4Y3E8l6qPkJaHM4",
+      "blindIndexes": {
+        "email_idx": "0ad4bac8",
+        "full_idx": "23f73a78bb64c713adca22e8e11bd4cd5141d317437c92cb3aae6d3aefc8324c",
+        "last4_idx": "d21b"
+      }
+    },
+    {
+      "value": "",
+      "ciphertext": "fips:JKdMIz5BHqh0VaFl0S4nQNK6_O_az9HMz86hyDWFJx16jRRi9mbk2woBYmV1n5-5odojFDfHth6BMzTUNMUT6VUfMkfK0Mwok0ICL25orD-VfUQUlX7xTgicuJPr5mkE",
+      "blindIndexes": {
+        "email_idx": "b19ffac2",
+        "full_idx": "e5e06b5a21894fcd88b8bb166b8d737f28e22f1d7c4550be3703383f73a63fbb",
+        "last4_idx": "d21b"
+      }
+    },
+    {
+      "value": "123-45-6789",
+      "ciphertext": "fips:BrmaeFiai2_fdjXzA0bjtdvDhT-w8AeAzWi1x_mydU1Mqzac1KTwebU1BvkswJ7PBPmbwwTpGAH3JSwWeg8JGC-wc8BNH6cWUepvs1WAVVvsnJGIzLC1oEp6YGwOdMd6blH8m2yhXfzI_Qs=",
+      "blindIndexes": {
+        "email_idx": "36841f36",
+        "full_idx": "3b9bb1cdcae3f990f8ec5fd68e097a6855e92ef1f145ebf9a3b4750e948d641c",
+        "last4_idx": "03e5"
+      }
+    },
+    {
+      "value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ciphertext": "fips:rhCEy55H6qKDUK2Qp0W8SldEb8i5ai2CQ2Q9pGjihwVP17lYDXVzugpreN4r7FaGiWRC38hj6biYvQvX4c2pTvAuRPh43hV5lqZY7x205cY62QDLfkctI5Pemfopnr_CotlecBV4PKfB0pGEy30xiLLIIiMy5yxYouKih-D9WjxGq_guRh7Wj9MHQfKpJU7gZaLFYiy0TVgz5_yMRbx7H-ru74BWvQ_ZyLVpVZ_Phons99CMdeMJJlURyoAl4EcsvXA2_d8RnIzJ0Re0GT-3pI-MeeqFkbDQW8evlucQ0YjJldX5mtYsyd-aUEkgAZbhWkKP5NIzOcmkQQW7uMy2mCM_gziznzxZL8Vbo-Spg_KgU4bFXA1BHBggQxVAFuwLCOSvf2WWoTNR5N6TZBBh9IIXZBJeb7qM9mJvugzBanF1PWykswP18ffrPLYlK5AFUwXT--K90ZKjwlsezSAJHQmUEjTlczlDW9tKg84REjJ5el02jAUnk8o2SefvtnUy2CTDXGfCqNzHPzO9bkjAeVJiPWSGfgIOuONYYo9xRS7pegP_yANesHn8m6EAKxFLUlEXRuPRVerDw3eDCMveY3LxsozHxmA1puOSLrPEczZIf9n-P8kcY_7atvsgD0E2puQu3WOZ3OWgxNSugYwsywQeeeqfbeBNKKXEiuc9HmR7lapHvN7MYjaA0BuIam2mFayFOO2wZHCuV-zaTu55z5Ken3NJG9LB_2QNAlvAiXnb0pXt70ND6LevQDtlTAiC2iq5DcLf0Lk__V8P1FT4LKZYFhHO1O5nAumudesatqfjWYvQjbR3jGIYdRMnZ7UGb8bCy05CBMBblYfaKyuP-kjomrlFcmyXtNJVjllVUEoV_S-HNKZKIULKUoM2aeiBkPK37Td20t92SEB-VAgJcBLKrBKd-UnZoVFcHm_IGp8pJKouyr9MnWZASE-ux7jgWEE-DD6ES3l9ZIDg5m83opYIWRchCLaQeoB6nYnasSt8h2N2fRUZ-jiYm71i2OgVGnQEMNiUyNYoXQ-BYHa4vaLZy8w8tFqa-HFO9VJg0OJXmplSa8SLk6fGWxmIlU-4Zz991jeYsUKkQLIGT_cTNtmWZ43mjZdimE4a9XoOhjvlsU0H_aUbqiTzb2MaGZuOdJYFFAOSrmTcwbdLaItQ-CEqpd7DZIFBoHax3N7QCv-EG-Icf17qucc0MpV9bvcx27TYaJLgL2SaCeJsliD2SjHRuzIPhyS97jc7WtDlVdIF2vgwXlujUfCrfEeTbItASYm_FoPOuch_0gksriitChgd7uN8zvkUg5bu_b6IgisoT669XNjrZIWC4IQNbyS5DMzJ5B6Ac2-at905HJZ2V8Ocba93UGiWRkNiwdURbkD_lw3CutyHFm8HQvHs9OPOL0lzt1p06jVWmcVycrTSku4AL18w_R9VPihvTvaxcKiLeBL3RdIIr_l4g5gP2KEidjyrY9cTgqTnIY9LaS6bI_e5urEDoTTGhruo61dWbAE6Yx_cYGlvdizG5qjBRpk1SuQTqtdnqXE3duSpq-BycTNbLuq4pmsx--obFGKcp0qCan09cmRYx-gXIX_KNue7NWi50UxZmPowD_eQAKVWSGLDYxsu48Ga9yNuLGiUR7M4-KBjzV0Jc-ml6ZrDriRQubsDHTKFq2H_QDXqIjkrFc9oS98D6NMBjFF4nvRtAVH2sdlDK9aeXvCzZtVi02AAbhh8-AJJNxNjnAtL5vC7NsP60i13FZixkVBNAm4iB6mc2PQfZEfFw2_DsGeJLfH3FUTPuxaIlobfOAtuzOIg3IcEJFvaSmJSu9wIPYjcjR1-28UR9snSW1DCsARCpOPbpShvIyZGDZeAkpK-ic-9OLPKvpJ4RHaqLaBu0hGwIRHR8CQ8F9-avFUHz6LxAWuXh4f8AKPPop9N-4Flas_gV_NGDBIo5mCIUZ_O7CqhAVaaFELfbxnUlRNYYDsl7c7HJnRWygg_lOUzUdDyxwU5JQrw1FJZ27rqqWpncspzh8bok4lpqrh9iVoGRVS9a-kPf5OCnfujhRK6QhGGS8FpyREFPnVC1lbYcY11sv1hx1KKLkGfXhC2b9jSC6V-WbW3aiVeULVjrksNI7b8kbRdp8De8SmadloUGDjhPSHfAIVkuFI05hNPpCsr4F93WDj831BP2oJ8FXAuOHIBnznXv4lNC383xPYVFFzUU0c0LdJ87fLRUsdBGaZ2yl-lZakGN004j9y4g5wymgUKF962wObOQwPJstmn1bF5ZxDtGEuP7hz2WIgbSv2NUUL1EK6XSI_GuyyFSDBwgMo9SAsvOhXFRgefvnBiyVjc1Te-zA8GP2ztdNh21-BPvjWMUDjKg8JPzQmq_HMHPGoO215Z8Rb9fgvTViJWMxngOzT0rfPR-jJs5ICZEbEO_dS3_t8x-g0Ls4hdHUMFNEEpTgsBdptvmaSgBJEhIFSP009gBtH_qUKYEIPHrH-uehAF4TQFQ20Jb-DDAy9swrsfkkJc03b2uq9E9BGPDWtNNzxV8eqsoGptyWOBUA5F4j67a1T1uLHXAs9-ttzJnjj4dbgNmZVM2khdsBubj-iirn9REwK25-c8jvLSFb7hi9FzdhMR3cz0_ZQQvdhaSGLoW69P0cBkRWIVl1jQNdayhZ5evE7xl8y4XESfB9S4_0nGbh3GoUymRCshemlg-dIWkOXnEOBbp8i3f_HO-Qs6RZhszB0LX9QY8sXcCXGIxku5UV8hPvxKSkxHf_K_8npqpjKOxRhBSk0hcS1BfoVywgqdbas=",
+      "blindIndexes": {
+        "email_idx": "18d4fd3f",
+        "full_idx": "4370df45ea72806a07711d463973f42094d6da0f27f25682329646837f3e3150",
+        "last4_idx": "d21b"
+      }
+    }
+  ]
+}

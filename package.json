@@ -1,0 +1,29 @@
+{
+  "name": "@cloudraker/encrypted-durable-object",
+  "version": "0.1.0",
+  "description": "Field-level encryption with blind indexes for Cloudflare Durable Object SQLite storage. CipherSweet-compatible, WebCrypto only.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./ciphersweet": "./src/ciphersweet.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "cloudflare",
+    "durable-objects",
+    "encryption",
+    "ciphersweet",
+    "blind-index",
+    "sqlite",
+    "multi-tenant"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.164.0"
+  }
+}
